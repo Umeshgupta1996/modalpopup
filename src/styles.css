@@ -1,1 +1,245 @@
-/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.navbar {
+    box-shadow: 0 2px 5px #00000029, 0 2px 10px #0000001f;
+    font-weight: 300;
+    background-color: black;
+}
+.dropdown:hover .dropdown-menu {display: block;}
+.modalclose {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.modal-header {
+    text-align: center;
+    background-color: #dfdfff;
+    display: block !important;
+}
+
+.modal-header img {
+    height: 65px;
+    width: 173px;
+}
+
+@media screen and (max-width: 991px) {
+    .modal-header img {
+        height: 50px;
+        /* height: 90px; */
+        width: 135px;
+    }
+}
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  .formhead{font-size: 1rem !important;}
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.mat-form-field {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: Roboto,Helvetica Neue,sans-serif;
+    letter-spacing: normal;
+}
+.mat-form-field-wrapper {
+    position: relative;
+}
+.mat-form-field-wrapper {
+    padding-bottom: 1em;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 4px 4px 0 0;
+    padding: 0em .75em 0 .75em !important;
+    background: #0d22220a;
+    border: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #0d2222;
+    height: 50px;
+    padding: 0 24px;
+}
+
+/* .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #0000000a;
+} */
+.mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: .45em 0 .75em;
+}
+.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 180px;
+}
+.mat-form-field-infix {
+    padding: .5em 0;
+    border-top: .84375em solid transparent;
+}
+.cdk-text-field-autofill-monitored:not(:-webkit-autofill) {
+    animation: cdk-text-field-autofill-end 0s 1ms;
+}
+input.mat-input-element {
+    margin-top: -.0625em;
+}
+.mat-input-element {
+    font: inherit;
+    background: rgba(0,0,0,0);
+    color: currentColor;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    text-align: inherit;
+    box-sizing: content-box;
+}
+
+.mat-form-field-label-wrapper {
+    position: absolute;
+    left: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+.mat-form-field-label {
+    position: absolute;
+    left: 0;
+    font: inherit;
+    pointer-events: none;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transform-origin: 0 0;
+    transition: transform 400ms cubic-bezier(0.25, 0.8, 0.25, 1),color 400ms cubic-bezier(0.25, 0.8, 0.25, 1),width 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: none;
+}
+.mat-form-field-label, .mat-hint {
+    color: #0009;
+}
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover:not([aria-disabled]), .mat-step-header:hover[aria-disabled=false] {
+    background-color: #0000000a;
+}
+
+.mat-step-header {
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-sizing: content-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.mat-horizontal-stepper-header {
+    display: flex;
+    height: 72px;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 24px;
+}
+.mat-step-header .mat-step-header-ripple {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.mat-horizontal-stepper-header .mat-step-icon {
+    margin-right: 8px;
+    flex: none;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #3f51b5;
+    color: #fff;
+}
+.mat-step-icon {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    position: relative;
+}
+.mat-step-icon-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.mat-step-label {
+    display: none !important;
+    min-width: 30px !important;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #3f51b5 !important;
+    color: #fff;
+}
+.mat-stepper-horizontal-line {
+    border-top-width: 1px;
+    border-top-style: solid;
+    flex: auto;
+    height: 0;
+    margin: 0 -16px;
+    min-width: 32px;
+}
+.mat-horizontal-stepper-header .mat-step-icon {
+    margin-right: 8px;
+    flex: none;
+}
+.mat-step-header .mat-step-icon {
+    background-color: #0000008a;
+    color: #fff;
+}
+.mat-horizontal-stepper-header:before, .mat-horizontal-stepper-header:after, .mat-stepper-horizontal-line {
+    border-top-color: #0000001f;
+}
+.mat-step-icon .mat-icon {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+.matbtn {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 10px;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 4px;
+    overflow: visible;
+}
+.cdk-visually-hidden{display: none};
